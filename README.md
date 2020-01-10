@@ -12,13 +12,13 @@ Help:
 		-fileserver : Serve local file system over Internet
 	example:
 
-	Invoke-Ngrok -auth xxxxxxxxx -protocol tcp -port 3389  #expose RDP session over Internet 
-	Invoke-Ngrok -auth xxxxxxxxx -protocol tcp -port 445   #expose SMB port over Internet
-	Invoke-Ngrok -auth xxxxxxxxx -protocol http -port 80   #expose HTTP port over Internet
+	Invoke-Ngrok -auth xxxxxxxxx -protocol tcp -port 3389  # Expose RDP session over Internet 
+	Invoke-Ngrok -auth xxxxxxxxx -protocol tcp -port 445   # Expose SMB port over Internet
+	Invoke-Ngrok -auth xxxxxxxxx -protocol http -port 80   # Expose HTTP port over Internet
 	
-	Invoke-Ngrok -fileserver "C:\Users\alan\Public Folder" # Expose local file system directories over internet
+	Invoke-Ngrok -auth xxxxxxxxx -fileserver "C:\Users\alan" # Expose local file system directories over internet
 	
-	Invoke-Ngrok -custom "http -region=us -hostname=dev.example.com 8000" #Custom ngrok command you want to execute. 
+	Invoke-Ngrok -custom "http -region=us -hostname=dev.example.com 8000"   #Custom ngrok command you want to execute. 
 	
 Author: @ThebenyGreen
   - EyesOpenSecurity
